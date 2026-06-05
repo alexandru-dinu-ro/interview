@@ -15,15 +15,16 @@
     <testSuite>interview.xml</testSuite>
     <!-- dependency version -->
     <testng_ver>7.12.0</testng_ver>
-    <selenium-java_ver>4.40.0</selenium-java_ver>
-    <selenium-chrome-driver_ver>4.40.0</selenium-chrome-driver_ver>
-    <selenium-edge-driver_ver>4.40.0</selenium-edge-driver_ver>
+    <selenium-java_ver>4.44.0</selenium-java_ver>
+    <selenium-chrome-driver_ver>4.44.0</selenium-chrome-driver_ver>
+    <selenium-edge-driver_ver>4.44.0</selenium-edge-driver_ver>
+    <selenium-firefox-driver_ver>4.44.0</selenium-firefox-driver_ver>
     <rest-assured_ver>6.0.0</rest-assured_ver>
     <!-- plugin version -->
     <maven-clean-plugin_ver>3.5.0</maven-clean-plugin_ver>
-    <maven-resources-plugin_ver>3.4.0</maven-resources-plugin_ver>
+    <maven-resources-plugin_ver>3.5.0</maven-resources-plugin_ver>
     <maven-compiler-plugin_ver>3.15.0</maven-compiler-plugin_ver>
-    <maven-surefire-plugin_ver>3.5.4</maven-surefire-plugin_ver>
+    <maven-surefire-plugin_ver>3.5.6</maven-surefire-plugin_ver>
     <!-- plugin dependency version -->
     <aspectjweaver_ver>1.9.25.1</aspectjweaver_ver>
   </properties>
@@ -52,6 +53,12 @@
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-edge-driver</artifactId>
       <version>${selenium-edge-driver_ver}</version>
+    </dependency>
+    <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-firefox-driver</artifactId>
+      <version>${selenium-firefox-driver_ver}</version>
     </dependency>
     <!-- Source: https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
     <dependency>
