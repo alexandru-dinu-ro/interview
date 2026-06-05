@@ -1,0 +1,7 @@
+# IDE #
+.idea/
+*.iml
+
+# PROJECT #
+src/test/resources/downloads/
+target/
