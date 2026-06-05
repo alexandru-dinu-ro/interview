@@ -7,21 +7,21 @@ import org.openqa.selenium.WebDriver;
 
 public class BasePage {
 
-  private final WebDriver driver = getDriver();
+  private static final WebDriver DRIVER = getDriver();
 
   public void loadWebpage(String url) {
     System.out.println("Load webpage: " + url);
-    driver.get(url);
+    DRIVER.get(url);
   }
 
   public String getWebpageUrl() {
-    String url = driver.getCurrentUrl();
+    String url = DRIVER.getCurrentUrl();
     System.out.println("getWebpageUrl() returned: " + url);
     return url;
   }
 
   public String getWebpageTitle() {
-    String result = driver.getTitle();
+    String result = DRIVER.getTitle();
     System.out.println("getWebpageTitle() returned: " + result);
     return result;
   }
